@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Alex Carter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">alex.carter</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item nav-cta"><a href="contact.html" class="nav-link cta-link">Hire Me</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="section-container">
+            <p class="section-tag">_portfolio</p>
+            <h1 class="page-title">Selected Work<span class="cursor-blink">_</span></h1>
+            <p class="page-subtitle">A few projects that showcase my skills and passion.</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="section-container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">🖼️</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack online store with React, Node, and Stripe integration.</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node</span>
+                            <span>Stripe</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-small">View Case Study</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">📊</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data visualization with D3.js and WebSockets.</p>
+                        <div class="portfolio-tags">
+                            <span>Vue</span>
+                            <span>D3</span>
+                            <span>Socket.io</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-small">View Case Study</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">📱</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Health & Fitness App</h3>
+                        <p>Mobile-first PWA built with React Native and Firebase.</p>
+                        <div class="portfolio-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-small">View Case Study</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">🎵</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Music Streaming Service</h3>
+                        <p>Responsive web player with custom audio engine.</p>
+                        <div class="portfolio-tags">
+                            <span>Next.js</span>
+                            <span>Node</span>
+                            <span>Redis</span>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-small">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2>Interested in working with me?</h2>
+                <a href="contact.html" class="btn btn-light">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">alex.carter</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Web developer crafting digital experiences with care and code.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <a href="index.html">Home</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alex Carter. All rights reserved.</p>
+                <p class="footer-quote">"Talk is cheap. Show me the code." — Linus Torvalds</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
