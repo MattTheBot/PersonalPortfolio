@@ -1,132 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — Alex Carter</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>
-                <span class="logo-text">alex.carter</span>
-                <span class="logo-bracket">/&gt;</span>
-            </a>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
-                <li class="nav-item nav-cta"><a href="contact.html" class="nav-link cta-link">Hire Me</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="section-container">
-            <p class="section-tag">_contact</p>
-            <h1 class="page-title">Let's Talk<span class="cursor-blink">_</span></h1>
-            <p class="page-subtitle">Have a project in mind? Reach out and let's make it happen.</p>
-        </div>
-    </header>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text" data-i18n="nav.logo"></span>
+      <span class="logo-bracket">/&gt;</span>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link" data-i18n="nav.home"></a></li>
+      <li><a href="skills.html" class="nav-link" data-i18n="nav.skills"></a></li>
+      <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio"></a></li>
+      <li><a href="contact.html" class="nav-link active" data-i18n="nav.contact"></a></li>
+      <li class="nav-cta"><a href="contact.html" class="nav-link cta-link" data-i18n="nav.hire"></a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="it">IT</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <div class="nav-toggle" id="nav-toggle" role="button" tabindex="0" aria-label="Menu">
+      <span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span>
+    </div>
+  </div>
+</nav>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="section-container contact-flex">
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p>I usually respond within 24 hours.</p>
-                <div class="contact-details">
-                    <p><span class="contact-icon">📧</span> alex.carter@email.com</p>
-                    <p><span class="contact-icon">📱</span> +1 (555) 123-4567</p>
-                    <p><span class="contact-icon">📍</span> San Francisco, CA</p>
-                    <p><span class="contact-icon">💼</span> Available for freelance</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link">GitHub</a>
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">Twitter</a>
-                </div>
-            </div>
-            <div class="contact-form-container">
-                <form action="#" method="post" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Project inquiry">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<header class="page-header">
+  <div class="section-container">
+    <p class="section-tag" data-i18n="contact.tag"></p>
+    <h1 class="page-title"><span data-i18n="contact.title"></span><span class="cursor-blink">_</span></h1>
+    <p class="page-subtitle" data-i18n="contact.subtitle"></p>
+  </div>
+</header>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
-        <div class="section-container">
-            <div class="cta-content">
-                <h2>Prefer email? <span class="cta-highlight">hello@alexcarter.dev</span></h2>
-            </div>
+<section class="contact-section">
+  <div class="section-container contact-flex">
+    <div class="contact-info">
+      <h2 data-i18n="contact.infoTitle"></h2>
+      <p data-i18n="contact.infoSubtitle"></p>
+      <div class="contact-details" id="contact-details"></div>
+      <div class="social-links">
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">Twitter</a>
+      </div>
+    </div>
+    <div class="contact-form-container">
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name" data-i18n="contact.nameLabel"></label>
+          <input type="text" id="name" name="name" data-i18n-placeholder="contact.namePlaceholder" required>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="index.html" class="nav-logo footer-logo">
-                        <span class="logo-bracket">&lt;</span>
-                        <span class="logo-text">alex.carter</span>
-                        <span class="logo-bracket">/&gt;</span>
-                    </a>
-                    <p>Web developer crafting digital experiences with care and code.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Navigate</h4>
-                    <a href="index.html">Home</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <a href="#">GitHub</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Email</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Alex Carter. All rights reserved.</p>
-                <p class="footer-quote">"Talk is cheap. Show me the code." — Linus Torvalds</p>
-            </div>
+        <div class="form-group">
+          <label for="email" data-i18n="contact.emailLabel"></label>
+          <input type="email" id="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" required>
         </div>
-    </footer>
+        <div class="form-group">
+          <label for="subject" data-i18n="contact.subjectLabel"></label>
+          <input type="text" id="subject" name="subject" data-i18n-placeholder="contact.subjectPlaceholder">
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="contact.messageLabel"></label>
+          <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.sendBtn"></button>
+      </form>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<section class="cta-banner">
+  <div class="section-container">
+    <div class="cta-content">
+      <h2><span data-i18n="contact.preferEmail"></span> <span class="cta-highlight" data-i18n="contact.footerEmail"></span></h2>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text" data-i18n="nav.logo"></span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p data-i18n="footer.tagline"></p>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer.navTitle"></h4>
+        <a href="index.html" data-i18n="nav.home"></a>
+        <a href="skills.html" data-i18n="nav.skills"></a>
+        <a href="portfolio.html" data-i18n="nav.portfolio"></a>
+        <a href="contact.html" data-i18n="nav.contact"></a>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer.connectTitle"></h4>
+        <a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Twitter</a>
+        <a href="#" data-i18n="contact.email"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <span data-i18n="home.title"></span>. <span data-i18n="footer.rights"></span></p>
+      <p class="footer-quote" data-i18n="footer.quote"></p>
+    </div>
+  </div>
+</footer>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
