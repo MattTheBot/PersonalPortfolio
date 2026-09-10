@@ -1,186 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Carter — Web Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>
-                <span class="logo-text">alex.carter</span>
-                <span class="logo-bracket">/&gt;</span>
-            </a>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="skills.html" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item nav-cta">
-                    <a href="contact.html" class="nav-link cta-link">Hire Me</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-dots"></div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-greeting">Hi there, my name is</p>
-                <h1 class="hero-title">Alex Carter<span class="cursor-blink">_</span></h1>
-                <div class="hero-typewriter">
-                    <span class="typewriter-prefix">I'm a </span>
-                    <span class="typewriter-text" id="typewriter-text"></span>
-                    <span class="typewriter-cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    I craft clean, performant, and delightful web experiences.
-                    From interactive UIs to robust backends — I bring ideas to life
-                    through code, creativity, and a whole lot of coffee.
-                </p>
-                <div class="hero-buttons">
-                    <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                    <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-                </div>
-                <div class="hero-meta">
-                    <div class="meta-item">
-                        <span class="meta-number">5+</span>
-                        <span class="meta-label">Years Experience</span>
-                    </div>
-                    <div class="meta-divider"></div>
-                    <div class="meta-item">
-                        <span class="meta-number">40+</span>
-                        <span class="meta-label">Projects Delivered</span>
-                    </div>
-                    <div class="meta-divider"></div>
-                    <div class="meta-item">
-                        <span class="meta-number">25+</span>
-                        <span class="meta-label">Happy Clients</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-code-card">
-                    <div class="code-card-header">
-                        <div class="code-dots">
-                            <span class="dot dot-red"></span>
-                            <span class="dot dot-yellow"></span>
-                            <span class="dot dot-green"></span>
-                        </div>
-                        <span class="code-filename">developer.js</span>
-                    </div>
-                    <div class="code-card-body">
-                        <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
-    <span class="code-prop">name</span>: <span class="code-string">'Alex Carter'</span>,
-    <span class="code-prop">role</span>: <span class="code-string">'Full-Stack Developer'</span>,
-    <span class="code-prop">passion</span>: <span class="code-string">'Building for the web'</span>,
-    <span class="code-prop">stack</span>: [<span class="code-string">'React'</span>, <span class="code-string">'Node'</span>, <span class="code-string">'TypeScript'</span>],
-    <span class="code-prop">coffee</span>: <span class="code-keyword">Infinity</span>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text" data-i18n="nav.logo">your.name</span>
+      <span class="logo-bracket">/&gt;</span>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a></li>
+      <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      <li class="nav-cta"><a href="contact.html" class="nav-link cta-link" data-i18n="nav.hire">Hire Me</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="it">IT</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <div class="nav-toggle" id="nav-toggle" role="button" tabindex="0" aria-label="Menu">
+      <span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-dots"></div>
+  <div class="hero-container">
+    <div class="hero-content">
+      <p class="hero-greeting" data-i18n="home.greeting"></p>
+      <h1 class="hero-title"><span data-i18n="home.title"></span><span class="cursor-blink">_</span></h1>
+      <div class="hero-typewriter">
+        <span class="typewriter-prefix" data-i18n="home.typewriterPrefix"></span>
+        <span class="typewriter-text" id="typewriter-text"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+      <p class="hero-description" data-i18n="home.description"></p>
+      <div class="hero-buttons">
+        <a href="portfolio.html" class="btn btn-primary" data-i18n="home.btnWork"></a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="home.btnContact"></a>
+      </div>
+      <div class="hero-meta" id="hero-stats"></div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-code-card">
+        <div class="code-card-header">
+          <div class="code-dots">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          </div>
+          <span class="code-filename">developer.js</span>
+        </div>
+        <div class="code-card-body">
+<pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">'Your Name'</span>,
+  <span class="code-prop">stack</span>: [<span class="code-string">'HTML'</span>, <span class="code-string">'CSS'</span>, <span class="code-string">'JS'</span>, <span class="code-string">'Python'</span>],
+  <span class="code-prop">learning</span>: <span class="code-string">'Rust'</span>,
+  <span class="code-prop">coffee</span>: <span class="code-keyword">Infinity</span>
 };</code></pre>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Featured Section -->
-    <section class="featured" id="featured">
-        <div class="section-container">
-            <div class="section-header">
-                <p class="section-tag">_featured</p>
-                <h2 class="section-title">What I Do</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="featured-grid">
-                <div class="featured-card">
-                    <div class="featured-icon">🖥️</div>
-                    <h3>Frontend Development</h3>
-                    <p>Pixel-perfect, responsive interfaces built with modern frameworks and a deep care for user experience.</p>
-                    <a href="skills.html" class="featured-link">Learn more →</a>
-                </div>
-                <div class="featured-card">
-                    <div class="featured-icon">⚙️</div>
-                    <h3>Backend Engineering</h3>
-                    <p>Robust APIs, database architecture, and server-side logic that powers scalable applications.</p>
-                    <a href="skills.html" class="featured-link">Learn more →</a>
-                </div>
-                <div class="featured-card">
-                    <div class="featured-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Thoughtful design systems and interfaces that balance aesthetics with functionality and accessibility.</p>
-                    <a href="skills.html" class="featured-link">Learn more →</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="featured">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-tag">_featured</p>
+      <h2 class="section-title" data-i18n="home.featuredTitle"></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="featured-grid" id="featured-grid"></div>
+  </div>
+</section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner" id="cta-banner">
-        <div class="section-container">
-            <div class="cta-content">
-                <h2>Let's build something <span class="cta-highlight">amazing</span> together.</h2>
-                <p>I'm currently available for freelance projects and full-time opportunities.</p>
-                <a href="contact.html" class="btn btn-light">Start a Project</a>
-            </div>
-        </div>
-    </section>
+<section class="cta-banner">
+  <div class="section-container">
+    <div class="cta-content">
+      <h2><span data-i18n="home.ctaTitle"></span> <span class="cta-highlight" data-i18n="home.ctaHighlight"></span><span data-i18n="home.ctaTitleEnd"></span></h2>
+      <p data-i18n="home.ctaText"></p>
+      <a href="contact.html" class="btn btn-light" data-i18n="home.ctaBtn"></a>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="index.html" class="nav-logo footer-logo">
-                        <span class="logo-bracket">&lt;</span>
-                        <span class="logo-text">alex.carter</span>
-                        <span class="logo-bracket">/&gt;</span>
-                    </a>
-                    <p>Web developer crafting digital experiences with care and code.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Navigate</h4>
-                    <a href="index.html">Home</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <a href="#" aria-label="GitHub">GitHub</a>
-                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" aria-label="Twitter">Twitter</a>
-                    <a href="#" aria-label="Email">Email</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Alex Carter. All rights reserved.</p>
-                <p class="footer-quote">"Talk is cheap. Show me the code." — Linus Torvalds</p>
-            </div>
-        </div>
-    </footer>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text" data-i18n="nav.logo"></span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p data-i18n="footer.tagline"></p>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer.navTitle"></h4>
+        <a href="index.html" data-i18n="nav.home"></a>
+        <a href="skills.html" data-i18n="nav.skills"></a>
+        <a href="portfolio.html" data-i18n="nav.portfolio"></a>
+        <a href="contact.html" data-i18n="nav.contact"></a>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer.connectTitle"></h4>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#" data-i18n="contact.email"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <span data-i18n="home.title"></span>. <span data-i18n="footer.rights"></span></p>
+      <p class="footer-quote" data-i18n="footer.quote"></p>
+    </div>
+  </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="content.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
