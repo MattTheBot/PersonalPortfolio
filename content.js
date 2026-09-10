@@ -13,7 +13,7 @@ const SITE_CONTENT = {
      ═══════════════════════════════════════════════════════════ */
   en: {
     nav: {
-      logo: "your.name",                     // ← your name / handle
+      logo: "Matthew.Thony",                     // ← your name / handle
       home: "Home",
       skills: "Skills",
       portfolio: "Portfolio",
@@ -23,7 +23,7 @@ const SITE_CONTENT = {
 
     home: {
       greeting: "Hi there, my name is",
-      title: "Your Name",                    // ← your full name
+      title: "Matthew Thony",                    // ← your full name
       typewriterPrefix: "I'm a ",
       typewriter: [
         "Web Developer",
@@ -119,8 +119,8 @@ const SITE_CONTENT = {
       subtitle: "Have a project in mind? Reach out and let's make it happen.",
       infoTitle: "Contact Information",
       infoSubtitle: "I usually respond within 24 hours.",
-      email: "you@email.com",                // ← your email
-      phone: "+39 000 000 0000",             // ← your phone
+      email: "mattthonhauser@gmail.com",                // ← your email
+      phone: "+39 375 631 8020",             // ← your phone
       location: "Italy",                     // ← your location
       availability: "Available for freelance",
       nameLabel: "Your Name",
@@ -133,7 +133,7 @@ const SITE_CONTENT = {
       messagePlaceholder: "Tell me about your project...",
       sendBtn: "Send Message",
       preferEmail: "Prefer email?",
-      footerEmail: "you@email.com"           // ← your email again
+      footerEmail: "mattthonhauser@gmail.com"           // ← your email again
     },
 
     footer: {
