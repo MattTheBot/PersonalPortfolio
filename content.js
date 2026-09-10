@@ -119,9 +119,9 @@ const SITE_CONTENT = {
       subtitle: "Have a project in mind? Reach out and let's make it happen.",
       infoTitle: "Contact Information",
       infoSubtitle: "I usually respond within 24 hours.",
-      email: "mattthonhauser@gmail.com",                // ← your email
+      email: "mattthonhauseralt@gmail.com",                // ← your email
       phone: "+39 375 631 8020",             // ← your phone
-      location: "Italy",                     // ← your location
+      location: "Italy, Rome",                     // ← your location
       availability: "Available for freelance",
       nameLabel: "Your Name",
       namePlaceholder: "John Doe",
@@ -133,7 +133,7 @@ const SITE_CONTENT = {
       messagePlaceholder: "Tell me about your project...",
       sendBtn: "Send Message",
       preferEmail: "Prefer email?",
-      footerEmail: "mattthonhauser@gmail.com"           // ← your email again
+      footerEmail: "mattthonhauseralt@gmail.com"           // ← your email again
     },
 
     footer: {
