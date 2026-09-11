@@ -99,7 +99,7 @@ const SITE_CONTENT = {
         {
           image: "assets/projects/project-1.jpg",
           title: "Project One",
-          text: "Short description of what this project does and the problem it solves.",
+          text: "Testing Project/Portfolio Cards",
           tags: ["HTML", "CSS", "JavaScript"],
           liveUrl: "",
           sourceUrl: ""
