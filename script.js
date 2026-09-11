@@ -38,6 +38,7 @@ function renderText() {
   document.documentElement.lang = currentLang;
 }
 
+/* ---------- Typewriter ---------- */
 let typewriterTimeout = null;
 function startTypewriter(phrases) {
   const el = document.getElementById('typewriter-text');
@@ -56,6 +57,7 @@ function startTypewriter(phrases) {
   tick();
 }
 
+/* ---------- Home ---------- */
 function renderHome() {
   if (document.getElementById('typewriter-text'))
     startTypewriter(t('home.typewriter'));
@@ -84,6 +86,7 @@ function renderHome() {
   }
 }
 
+/* ---------- Skills ---------- */
 function renderSkills() {
   const grid = document.getElementById('skills-grid');
   if (!grid) return;
@@ -101,32 +104,65 @@ function renderSkills() {
     </div>`).join('');
 }
 
+/* ---------- Portfolio ---------- */
 function renderPortfolio() {
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
   const items = t('portfolio.items') || [];
-  grid.innerHTML = items.map(it => `
-    <div class="portfolio-item">
-      <div class="portfolio-image"><div class="placeholder-img">${it.icon}</div></div>
-      <div class="portfolio-info">
-        <h3>${it.title}</h3>
-        <p>${it.text}</p>
-        <div class="portfolio-tags">${it.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
-        <a href="#" class="btn btn-outline btn-small">${t('portfolio.viewCase')}</a>
-      </div>
-    </div>`).join('');
+  const liveLabel = t('portfolio.liveDemo') || 'Live Demo';
+  const srcLabel  = t('portfolio.sourceCode') || 'Source Code';
+
+  grid.innerHTML = items.map(it => {
+    const imageHTML = it.image
+      ? `<img src="${it.image}" alt="${it.title}" loading="lazy"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'placeholder-img',textContent:'🖼️'}))">`
+      : `<div class="placeholder-img">🖼️</div>`;
+
+    const liveBtn = it.liveUrl
+      ? `<a href="${it.liveUrl}" target="_blank" rel="noopener" class="btn btn-primary btn-small">${liveLabel} ↗</a>`
+      : '';
+    const srcBtn = it.sourceUrl
+      ? `<a href="${it.sourceUrl}" target="_blank" rel="noopener" class="btn btn-outline btn-small">${srcLabel} ↗</a>`
+      : '';
+
+    return `
+      <div class="portfolio-item">
+        <div class="portfolio-image">${imageHTML}</div>
+        <div class="portfolio-info">
+          <h3>${it.title}</h3>
+          <p>${it.text}</p>
+          <div class="portfolio-tags">
+            ${(it.tags || []).map(tag => `<span>${tag}</span>`).join('')}
+          </div>
+          ${(liveBtn || srcBtn) ? `<div class="portfolio-links">${liveBtn}${srcBtn}</div>` : ''}
+        </div>
+      </div>`;
+  }).join('');
 }
 
+/* ---------- Contact ---------- */
 function renderContact() {
   const info = document.getElementById('contact-details');
   if (!info) return;
+
+  const phoneNote = t('contact.phoneNote');
+  const whatsappUrl = t('contact.whatsappUrl');
+  const phoneInner = phoneNote
+    ? `${t('contact.phone')} <span class="contact-note">(${phoneNote})</span>`
+    : t('contact.phone');
+
+  const phoneHTML = whatsappUrl
+    ? `<a href="${whatsappUrl}" target="_blank" rel="noopener" class="contact-link">${phoneInner}</a>`
+    : phoneInner;
+
   info.innerHTML = `
-    <p><span class="contact-icon">📧</span> ${t('contact.email')}</p>
-    <p><span class="contact-icon">📱</span> ${t('contact.phone')}</p>
+    <p><span class="contact-icon">📧</span> <a href="mailto:${t('contact.email')}" class="contact-link">${t('contact.email')}</a></p>
+    <p><span class="contact-icon">📱</span> ${phoneHTML}</p>
     <p><span class="contact-icon">📍</span> ${t('contact.location')}</p>
     <p><span class="contact-icon">💼</span> ${t('contact.availability')}</p>`;
 }
 
+/* ---------- Language switcher ---------- */
 function updateLangButtons() {
   document.querySelectorAll('[data-lang]').forEach(btn =>
     btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang));
@@ -149,6 +185,7 @@ function setupLangSwitcher() {
   updateLangButtons();
 }
 
+/* ---------- Mobile nav ---------- */
 function setupMobileNav() {
   const toggle = document.getElementById('nav-toggle');
   const menu   = document.getElementById('nav-menu');
@@ -158,6 +195,7 @@ function setupMobileNav() {
     a.addEventListener('click', () => menu.classList.remove('active')));
 }
 
+/* ---------- Boot ---------- */
 function renderAll() {
   renderText();
   renderHome();
