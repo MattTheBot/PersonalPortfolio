@@ -1,19 +1,16 @@
 /* ============================================================
    ✏️  content.js  —  EDIT ALL YOUR TEXT HERE (SITE-WIDE)
    ============================================================
-   This is the ONLY file you need to touch to change text.
-   Everything is grouped by language: en, it, de.
-   Save → refresh → changes appear on every page automatically.
+   This is the ONLY file you touch to change text.
+   Three languages: en, it, de. Save → hard refresh.
    ============================================================ */
 
 const SITE_CONTENT = {
 
-  /* ═══════════════════════════════════════════════════════════
-     🇬🇧  ENGLISH
-     ═══════════════════════════════════════════════════════════ */
+  /* ═══════════════════ 🇬🇧  ENGLISH ═══════════════════ */
   en: {
     nav: {
-      logo: "Matthew.Thony",                     // ← your name / handle
+      logo: "matthew.thony",
       home: "Home",
       skills: "Skills",
       portfolio: "Portfolio",
@@ -23,7 +20,7 @@ const SITE_CONTENT = {
 
     home: {
       greeting: "Hi there, my name is",
-      title: "Matthew Thony",                    // ← your full name
+      title: "Matthew.Thony",
       typewriterPrefix: "I'm a ",
       typewriter: [
         "Web Developer",
@@ -64,19 +61,19 @@ const SITE_CONTENT = {
         {
           title: "Frontend",
           items: [
-            { name: "HTML5 & CSS3",        level: "Expert" },
-            { name: "JavaScript (ES6+)",   level: "Advanced" },
-            { name: "Responsive Design",   level: "Advanced" },
-            { name: "Accessibility (a11y)",level: "Intermediate" }
+            { name: "HTML5 & CSS3",         level: "Expert" },
+            { name: "JavaScript (ES6+)",    level: "Advanced" },
+            { name: "Responsive Design",    level: "Advanced" },
+            { name: "Accessibility (a11y)", level: "Intermediate" }
           ]
         },
         {
           title: "Languages",
           items: [
-            { name: "Python",       level: "Intermediate" },
-            { name: "SQL",          level: "Intermediate" },
-            { name: "TypeScript",   level: "Basics" },
-            { name: "Rust",         level: "Basics" }
+            { name: "Python",     level: "Intermediate" },
+            { name: "SQL",        level: "Intermediate" },
+            { name: "TypeScript", level: "Basics" },
+            { name: "Rust",       level: "Basics" }
           ]
         },
         {
@@ -96,20 +93,41 @@ const SITE_CONTENT = {
       tag: "_portfolio",
       title: "Selected Work",
       subtitle: "A few projects that show what I can do.",
-      viewCase: "View Case Study",
+      liveDemo: "Live Demo",
+      sourceCode: "Source Code",
       items: [
-        { icon: "🖼️", title: "Project One",
+        {
+          image: "assets/projects/project-1.jpg",
+          title: "Project One",
           text: "Short description of what this project does and the problem it solves.",
-          tags: ["HTML", "CSS", "JavaScript"] },
-        { icon: "📊", title: "Project Two",
+          tags: ["HTML", "CSS", "JavaScript"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-2.jpg",
+          title: "Project Two",
           text: "Short description of what this project does and the problem it solves.",
-          tags: ["Python", "Flask"] },
-        { icon: "📱", title: "Project Three",
+          tags: ["Python", "Flask"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-3.jpg",
+          title: "Project Three",
           text: "Short description of what this project does and the problem it solves.",
-          tags: ["JavaScript", "API"] },
-        { icon: "🎵", title: "Project Four",
+          tags: ["JavaScript", "API"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-4.jpg",
+          title: "Project Four",
           text: "Short description of what this project does and the problem it solves.",
-          tags: ["Rust", "CLI"] }
+          tags: ["Rust", "CLI"],
+          liveUrl: "",
+          sourceUrl: ""
+        }
       ]
     },
 
@@ -118,10 +136,12 @@ const SITE_CONTENT = {
       title: "Let's Talk",
       subtitle: "Have a project in mind? Reach out and let's make it happen.",
       infoTitle: "Contact Information",
-      infoSubtitle: "I usually respond within 24 hours.",
-      email: "mattthonhauseralt@gmail.com",                // ← your email
-      phone: "+39 375 631 8020",             // ← your phone
-      location: "Italy, Rome",                     // ← your location
+      infoSubtitle: "I usually respond within 24 hours. WhatsApp is the fastest way to reach me.",
+      email: "mattthonhauseralt@gmail.com",
+      phone: "+39 375 631 8020",
+      phoneNote: "WhatsApp preferred",
+      whatsappUrl: "https://wa.me/393756318020",
+      location: "Italy",
       availability: "Available for freelance",
       nameLabel: "Your Name",
       namePlaceholder: "John Doe",
@@ -133,7 +153,7 @@ const SITE_CONTENT = {
       messagePlaceholder: "Tell me about your project...",
       sendBtn: "Send Message",
       preferEmail: "Prefer email?",
-      footerEmail: "mattthonhauseralt@gmail.com"           // ← your email again
+      footerEmail: "mattthonhauseralt@gmail.com"
     },
 
     footer: {
@@ -145,12 +165,10 @@ const SITE_CONTENT = {
     }
   },
 
-  /* ═══════════════════════════════════════════════════════════
-     🇮🇹  ITALIANO  — per il mercato italiano
-     ═══════════════════════════════════════════════════════════ */
+  /* ═══════════════════ 🇮🇹  ITALIANO ═══════════════════ */
   it: {
     nav: {
-      logo: "tuo.nome",
+      logo: "matthew.thony",
       home: "Home",
       skills: "Competenze",
       portfolio: "Portfolio",
@@ -160,7 +178,7 @@ const SITE_CONTENT = {
 
     home: {
       greeting: "Ciao, mi chiamo",
-      title: "Il Tuo Nome",
+      title: "Matthew.Thony",
       typewriterPrefix: "Sono ",
       typewriter: [
         "Sviluppatore Web",
@@ -233,20 +251,41 @@ const SITE_CONTENT = {
       tag: "_portfolio",
       title: "Lavori selezionati",
       subtitle: "Alcuni progetti che mostrano ciò che so fare.",
-      viewCase: "Vedi caso di studio",
+      liveDemo: "Demo dal vivo",
+      sourceCode: "Codice sorgente",
       items: [
-        { icon: "🖼️", title: "Progetto Uno",
+        {
+          image: "assets/projects/project-1.jpg",
+          title: "Progetto Uno",
           text: "Breve descrizione di cosa fa questo progetto e quale problema risolve.",
-          tags: ["HTML", "CSS", "JavaScript"] },
-        { icon: "📊", title: "Progetto Due",
+          tags: ["HTML", "CSS", "JavaScript"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-2.jpg",
+          title: "Progetto Due",
           text: "Breve descrizione di cosa fa questo progetto e quale problema risolve.",
-          tags: ["Python", "Flask"] },
-        { icon: "📱", title: "Progetto Tre",
+          tags: ["Python", "Flask"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-3.jpg",
+          title: "Progetto Tre",
           text: "Breve descrizione di cosa fa questo progetto e quale problema risolve.",
-          tags: ["JavaScript", "API"] },
-        { icon: "🎵", title: "Progetto Quattro",
+          tags: ["JavaScript", "API"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-4.jpg",
+          title: "Progetto Quattro",
           text: "Breve descrizione di cosa fa questo progetto e quale problema risolve.",
-          tags: ["Rust", "CLI"] }
+          tags: ["Rust", "CLI"],
+          liveUrl: "",
+          sourceUrl: ""
+        }
       ]
     },
 
@@ -255,9 +294,11 @@ const SITE_CONTENT = {
       title: "Parliamo",
       subtitle: "Hai un progetto in mente? Contattami e realizziamolo insieme.",
       infoTitle: "Informazioni di contatto",
-      infoSubtitle: "Di solito rispondo entro 24 ore.",
-      email: "tu@email.com",
-      phone: "+39 000 000 0000",
+      infoSubtitle: "Di solito rispondo entro 24 ore. WhatsApp è il modo più veloce per raggiungermi.",
+      email: "mattthonhauseralt@gmail.com",
+      phone: "+39 375 631 8020",
+      phoneNote: "Preferibilmente WhatsApp",
+      whatsappUrl: "https://wa.me/393756318020",
       location: "Italia",
       availability: "Disponibile per freelance",
       nameLabel: "Il tuo nome",
@@ -270,7 +311,7 @@ const SITE_CONTENT = {
       messagePlaceholder: "Raccontami del tuo progetto...",
       sendBtn: "Invia messaggio",
       preferEmail: "Preferisci l'email?",
-      footerEmail: "tu@email.com"
+      footerEmail: "mattthonhauseralt@gmail.com"
     },
 
     footer: {
@@ -282,12 +323,10 @@ const SITE_CONTENT = {
     }
   },
 
-  /* ═══════════════════════════════════════════════════════════
-     🇩🇪  DEUTSCH
-     ═══════════════════════════════════════════════════════════ */
+  /* ═══════════════════ 🇩🇪  DEUTSCH ═══════════════════ */
   de: {
     nav: {
-      logo: "dein.name",
+      logo: "matthew.thony",
       home: "Startseite",
       skills: "Fähigkeiten",
       portfolio: "Portfolio",
@@ -297,7 +336,7 @@ const SITE_CONTENT = {
 
     home: {
       greeting: "Hallo, mein Name ist",
-      title: "Dein Name",
+      title: "Matthew.Thony",
       typewriterPrefix: "Ich bin ",
       typewriter: [
         "Webentwickler",
@@ -338,9 +377,9 @@ const SITE_CONTENT = {
         {
           title: "Frontend",
           items: [
-            { name: "HTML5 & CSS3",          level: "Experte" },
-            { name: "JavaScript (ES6+)",     level: "Fortgeschritten" },
-            { name: "Responsive Design",     level: "Fortgeschritten" },
+            { name: "HTML5 & CSS3",            level: "Experte" },
+            { name: "JavaScript (ES6+)",       level: "Fortgeschritten" },
+            { name: "Responsive Design",       level: "Fortgeschritten" },
             { name: "Barrierefreiheit (a11y)", level: "Mittel" }
           ]
         },
@@ -370,20 +409,41 @@ const SITE_CONTENT = {
       tag: "_portfolio",
       title: "Ausgewählte Arbeiten",
       subtitle: "Ein paar Projekte, die zeigen, was ich kann.",
-      viewCase: "Fallstudie ansehen",
+      liveDemo: "Live-Demo",
+      sourceCode: "Quellcode",
       items: [
-        { icon: "🖼️", title: "Projekt Eins",
+        {
+          image: "assets/projects/project-1.jpg",
+          title: "Projekt Eins",
           text: "Kurze Beschreibung, was dieses Projekt macht und welches Problem es löst.",
-          tags: ["HTML", "CSS", "JavaScript"] },
-        { icon: "📊", title: "Projekt Zwei",
+          tags: ["HTML", "CSS", "JavaScript"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-2.jpg",
+          title: "Projekt Zwei",
           text: "Kurze Beschreibung, was dieses Projekt macht und welches Problem es löst.",
-          tags: ["Python", "Flask"] },
-        { icon: "📱", title: "Projekt Drei",
+          tags: ["Python", "Flask"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-3.jpg",
+          title: "Projekt Drei",
           text: "Kurze Beschreibung, was dieses Projekt macht und welches Problem es löst.",
-          tags: ["JavaScript", "API"] },
-        { icon: "🎵", title: "Projekt Vier",
+          tags: ["JavaScript", "API"],
+          liveUrl: "",
+          sourceUrl: ""
+        },
+        {
+          image: "assets/projects/project-4.jpg",
+          title: "Projekt Vier",
           text: "Kurze Beschreibung, was dieses Projekt macht und welches Problem es löst.",
-          tags: ["Rust", "CLI"] }
+          tags: ["Rust", "CLI"],
+          liveUrl: "",
+          sourceUrl: ""
+        }
       ]
     },
 
@@ -392,10 +452,12 @@ const SITE_CONTENT = {
       title: "Sprechen wir",
       subtitle: "Hast du ein Projekt im Kopf? Melde dich und lass es uns umsetzen.",
       infoTitle: "Kontaktinformationen",
-      infoSubtitle: "Ich antworte normalerweise innerhalb von 24 Stunden.",
-      email: "du@email.com",
-      phone: "+49 000 000 0000",
-      location: "Deutschland",
+      infoSubtitle: "Ich antworte normalerweise innerhalb von 24 Stunden. WhatsApp ist der schnellste Weg.",
+      email: "mattthonhauseralt@gmail.com",
+      phone: "+39 375 631 8020",
+      phoneNote: "WhatsApp bevorzugt",
+      whatsappUrl: "https://wa.me/393756318020",
+      location: "Italien",
       availability: "Verfügbar für Freelance",
       nameLabel: "Dein Name",
       namePlaceholder: "Max Mustermann",
@@ -407,7 +469,7 @@ const SITE_CONTENT = {
       messagePlaceholder: "Erzähl mir von deinem Projekt...",
       sendBtn: "Nachricht senden",
       preferEmail: "Lieber per E-Mail?",
-      footerEmail: "du@email.com"
+      footerEmail: "mattthonhauseralt@gmail.com"
     },
 
     footer: {
